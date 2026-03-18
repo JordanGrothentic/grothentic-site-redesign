@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SEO Blog & Local Marketing Insights | Grothentic | Sarasota, FL</title>
+  <meta name="description" content="Read the latest local SEO strategies, web design tips & paid ads insights from Grothentic — Sarasota's top digital marketing agency serving Southwest Florida businesses.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://grothentic.io/blog/">
+
+  <meta name="geo.region" content="US-FL">
+  <meta name="geo.placename" content="Sarasota, Florida">
+  <meta name="geo.position" content="27.3364;-82.5307">
+  <meta name="ICBM" content="27.3364, -82.5307">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grothentic.io/blog/">
+  <meta property="og:title" content="Blog & Insights | Grothentic Digital Marketing Sarasota">
+  <meta property="og:description" content="Read the latest insights on Local SEO, Web Design, and Paid Ads from Sarasota's leading digital marketing agency.">
+  <meta property="og:image" content="https://grothentic.io/wp-content/uploads/og-image.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Grothentic">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog & Insights | Grothentic Digital Marketing">
+  <meta name="twitter:description" content="SEO, web design, and paid ads insights from Sarasota's leading agency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ═══ PREMIUM DESIGN TOKENS ═══ */
+    :root {
+      --primary: #0066FF;
+      --primary-hover: #0052cc;
+      --secondary: #06B6D4;
+      --accent-glow: rgba(0, 102, 255, 0.4);
+      --bg-dark: #030712;
+      --bg-dark-card: #0f172a;
+      --bg-light: #ffffff;
+      --bg-off-white: #f8fafc;
+      --text-dark: #020617;
+      --text-dark-muted: #475569;
+      --text-light: #f8fafc;
+      --text-light-muted: #94a3b8;
+      --border-light: #e2e8f0;
+      --border-dark: rgba(255, 255, 255, 0.08);
+      --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: var(--bg-off-white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-display {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    /* ═══ UTILITIES & LAYOUT ═══ */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+
+    section {
+      padding: clamp(4rem, 8vw, 6rem) 0;
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .tag::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .tag.center {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tag.center::before {
+      display: none;
+    }
+
+    /* ═══ BUTTONS ═══ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      transition: all 0.3s var(--ease-smooth);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 4px 14px 0 rgba(0, 102, 255, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 102, 255, 0.4);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* ═══ NAVIGATION ═══ */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 80px;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      transition: all 0.4s var(--ease-smooth);
+    }
+
+    nav.scrolled-light {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+      height: 70px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    nav.scrolled-light .nav-logo {
+      color: var(--text-dark);
+    }
+
+    nav.scrolled-light .nav-logo svg path:nth-child(2) {
+      fill: var(--text-dark);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    nav.scrolled-light .nav-links a {
+      color: var(--text-dark-muted);
+    }
+
+    nav.scrolled-light .nav-links a:hover {
+      color: var(--text-dark);
+      background: var(--bg-off-white);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-tel {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .nav-tel:hover {
+      opacity: 0.8;
+    }
+
+    nav.scrolled-light .nav-tel {
+      color: var(--text-dark);
+    }
+
+    /* ═══ BLOG HERO ═══ */
+    .blog-hero {
+      background: var(--bg-dark);
+      padding: 160px 0 100px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .blog-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80vw;
+      height: 80vw;
+      background: radial-gradient(circle, rgba(0, 102, 255, 0.15) 0%, rgba(0, 0, 0, 0) 60%);
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-noise {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      opacity: 0.03;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    .blog-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .blog-h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      line-height: 1.05;
+    }
+
+    .blog-sub {
+      font-size: clamp(1.1rem, 2vw, 1.25rem);
+      color: var(--text-light-muted);
+      line-height: 1.6;
+    }
+
+    /* ═══ BLOG FILTERS ═══ */
+    .blog-filters-section {
+      background: var(--bg-off-white);
+      padding-top: 4rem;
+      padding-bottom: 0;
+    }
+
+    .blog-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .filter-btn {
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      color: var(--text-dark-muted);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: all 0.3s var(--ease-smooth);
+    }
+
+    .filter-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 102, 255, 0.1);
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* ═══ BLOG GRID ═══ */
+    .blog-main {
+      background: var(--bg-off-white);
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .bcard {
+      border: 1px solid var(--border-light);
+      border-radius: 24px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.4s var(--ease-spring);
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-light);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    }
+
+    .bcard:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+      border-color: rgba(0, 102, 255, 0.3);
+    }
+
+    .bcard-img {
+      height: 240px;
+      background: var(--bg-dark);
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .bcard.featured .bcard-img {
+      height: 320px;
+    }
+
+    /* Image Styling & Hover Zoom */
+    .bcard-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-spring);
+    }
+
+    .bcard:hover .bcard-img img {
+      transform: scale(1.05);
+    }
+
+    /* Gradient Overlay for Readability */
+    .bcard-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(3, 7, 18, 0.4) 0%, rgba(3, 7, 18, 0) 40%);
+      pointer-events: none;
+    }
+
+    .bcat {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(5px);
+      color: var(--text-dark);
+      padding: 6px 12px;
+      border-radius: 100px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .bcard.featured .btitle {
+      font-size: 1.75rem;
+    }
+
+    .bcard-body {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btitle {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      flex: 1;
+      transition: color 0.2s;
+    }
+
+    .bcard:hover .btitle {
+      color: var(--primary);
+    }
+
+    .bexcerpt {
+      font-size: 0.95rem;
+      color: var(--text-dark-muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .bmeta {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-light-muted);
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      border-top: 1px solid var(--border-light);
+      padding-top: 1rem;
+    }
+
+    .bmeta-author {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .bmeta-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 0.7rem;
+    }
+
+    /* ═══ PAGINATION ═══ */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 4rem;
+    }
+
+    .page-btn {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      font-weight: 600;
+      color: var(--text-dark-muted);
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      text-decoration: none;
+      transition: all 0.2s var(--ease-smooth);
+    }
+
+    .page-btn:hover {
+      background: var(--bg-off-white);
+      color: var(--text-dark);
+      border-color: var(--text-dark-muted);
+    }
+
+    .page-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* ═══ NEWSLETTER / CTA ═══ */
+    .newsletter-cta {
+      background: var(--bg-dark);
+      padding: 6rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: 2rem;
+    }
+
+    .newsletter-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 100%, rgba(6, 182, 212, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .nl-wrap {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .nl-h {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .nl-sub {
+      font-size: 1.1rem;
+      color: var(--text-light-muted);
+      margin-bottom: 2.5rem;
+    }
+
+    .nl-form {
+      display: flex;
+      gap: 12px;
+    }
+
+    .nl-input {
+      flex: 1;
+      padding: 16px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--border-dark);
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .nl-input::placeholder {
+      color: var(--text-light-muted);
+    }
+
+    .nl-input:focus {
+      border-color: var(--primary);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* ═══ FOOTER ═══ */
+    footer {
+      background: #02040a;
+      border-top: 1px solid var(--border-dark);
+      padding: 5rem 0 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .foot-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .foot-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .foot-desc {
+      font-size: 0.95rem;
+      color: var(--text-light-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 300px;
+    }
+
+    .foot-contact a {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-light-muted);
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    .foot-contact a:hover {
+      color: var(--primary);
+    }
+
+    .foot-col-h {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .foot-links {
+      list-style: none;
+    }
+
+    .foot-links li {
+      margin-bottom: 12px;
+    }
+
+    .foot-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-light-muted);
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
+    .foot-links a:hover {
+      color: var(--primary);
+      transform: translateX(4px);
+    }
+
+    .foot-bottom {
+      border-top: 1px solid var(--border-dark);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .foot-copy {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-light-muted);
+    }
+
+    .foot-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .foot-legal a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-light-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .foot-legal a:hover {
+      color: #fff;
+    }
+
+    /* ═══ MOBILE HAMBURGER MENU ═══ */
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 6px 0; transition: all 0.3s; border-radius: 2px; }
+    nav.scrolled-light .hamburger span { background: var(--text-dark); }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+    .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg-dark); z-index: 999; padding: 100px 5% 2rem; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+    .mobile-menu.active { display: flex; }
+    .mobile-menu a { font-size: 1.25rem; font-weight: 600; color: #fff; text-decoration: none; padding: 12px 0; transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--primary); }
+    .mobile-menu .btn-primary { margin-top: 1rem; }
+
+    /* ═══ ANIMATIONS ═══ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .d1 {
+      transition-delay: 0.1s;
+    }
+
+    .d2 {
+      transition-delay: 0.2s;
+    }
+
+    .d3 {
+      transition-delay: 0.3s;
+    }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media(max-width:1024px) {
+      .blog-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+    }
+
+    @media(max-width:768px) {
+      nav {
+        padding: 0 5%;
+        height: 70px;
+      }
+
+      .nav-links,
+      .nav-tel {
+        display: none;
+      }
+
+      .hamburger { display: block; }
+
+      section {
+        padding: 4rem 0;
+      }
+
+      .blog-hero {
+        padding: 120px 0 60px;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bcard.featured {
+        grid-column: span 1;
+      }
+
+      .nl-form {
+        flex-direction: column;
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .foot-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Grothentic Blog & Insights",
+  "description": "Read the latest insights on Local SEO, Web Design, and Paid Ads from Sarasota's leading digital marketing agency.",
+  "url": "https://grothentic.io/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Grothentic",
+    "url": "https://grothentic.io/"
+  },
+  "isPartOf": { "@type": "WebSite", "name": "Grothentic", "url": "https://grothentic.io/" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://grothentic.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grothentic.io/blog/" }
+    ]
+  }
+}
+</script>
+</head>
+
+<body>
+
+  <nav id="nav">
+    <a href="/" class="nav-logo">
+      <svg width="28" height="28" viewBox="0 0 1080 1080" fill="none">
+        <path d="M540.019 287.167C395.592 287.167 278.083 404.638 278.083 549.065C278.083 614.587 302.248 674.529 342.135 720.523L425.111 637.546C406.186 613.041 394.952 582.354 394.952 549.065C394.952 469.104 460.021 404.035 540.019 404.035C620.018 404.035 685.05 469.104 685.05 549.065C685.05 582.316 673.777 613.004 654.89 637.508L737.904 720.523C777.753 674.529 801.918 614.587 801.918 549.065C801.918 404.638 684.409 287.167 540.019 287.167Z" fill="currentColor" />
+        <path d="M737.905 720.521C710.875 751.623 676.681 776.354 637.889 791.999L540.021 694.131L442.115 791.999C403.322 776.316 369.129 751.623 342.136 720.521L425.112 637.544L540.021 522.636L737.905 720.521Z" fill="#fff" />
+      </svg>
+      Grothentic
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Results</a></li>
+      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:9412171110" class="nav-tel">(941) 217-1110</a>
+      <a href="/booking/" class="btn btn-primary">Book a Call</a>
+    </div>
+    <button class="hamburger" aria-label="Menu" onclick="this.classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/services/">Services</a>
+    <a href="/results/">Results</a>
+    <a href="/clients/">Clients</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="tel:9412171110">(941) 217-1110</a>
+    <a href="/booking/" class="btn btn-primary">Book a Call</a>
+  </div>
+
+  <header class="blog-hero">
+    <div class="hero-noise"></div>
+    <div class="container blog-hero-inner">
+      <div class="tag center reveal">Grothentic Insights</div>
+      <h1 class="blog-h1 reveal d1">Local SEO Strategies That Drive <span class="text-gradient">Revenue</span></h1>
+      <p class="blog-sub reveal d2">Explore our latest guides, case studies, and insights on local SEO, custom web design, and scaling Southwest Florida businesses with high-converting ads.</p>
+    </div>
+  </header>
+
+  <section class="blog-filters-section">
+    <div class="container">
+      <div class="blog-filters reveal">
+        <button class="filter-btn active">View All</button>
+        <button class="filter-btn">Local SEO</button>
+        <button class="filter-btn">Web Design</button>
+        <button class="filter-btn">Paid Ads</button>
+        <button class="filter-btn">Case Studies</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-main">
+    <div class="container">
+      <div class="blog-grid">
+
+        <a href="#" class="bcard featured reveal">
+          <div class="bcard-img">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Case Study Strategy">
+            <span class="bcat">Case Study</span>
+          </div>
+          <div class="bcard-body">
+            <div class="btitle">How We Outranked Competitors in 3 Weeks for a Brand New Location</div>
+            <p class="bexcerpt">Expanding into a new territory is notoriously difficult for local SEO. We break down the exact content strategy, technical fixes, and citation structure we used to dominate search results in record time.</p>
+            <div class="bmeta">
+              <div class="bmeta-author">
+                <div class="bmeta-avatar">G</div> Grothentic Team
+              </div>
+              <span>•</span>
+              <span>Aug 22, 2026</span>
+              <span>•</span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="bcard reveal d1">
+          <div class="bcard-img">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="SEO AI Overview">
+            <span class="bcat">SEO</span>
+          </div>
+          <div class="bcard-body">
+            <div class="btitle">Structuring Local Pages for Google's AI Overview</div>
+            <p class="bexcerpt">AI overviews are changing how local search operates. Learn the markup and structure required to be the recommended provider.</p>
+            <div class="bmeta">
+              <div class="bmeta-author">
+                <div class="bmeta-avatar">G</div> Grothentic
+              </div>
+              <span>May 30, 2026</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="bcard reveal">
+          <div class="bcard-img">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Web Design Performance">
+            <span class="bcat">Web Design</span>
+          </div>
+          <div class="bcard-body">
+            <div class="btitle">Why Core Web Vitals Matter More Than Ever in 2026</div>
+            <p class="bexcerpt">A slow website is bleeding revenue. We analyze the impact of load times on conversion rates and Google rankings.</p>
+            <div class="bmeta">
+              <div class="bmeta-author">
+                <div class="bmeta-avatar">G</div> Grothentic
+              </div>
+              <span>May 15, 2026</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="bcard reveal d1">
+          <div class="bcard-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Paid Ads Strategy">
+            <span class="bcat">Paid Ads</span>
+          </div>
+          <div class="bcard-body">
+            <div class="btitle">Maximizing Meta Ads ROI for Local Service Businesses</div>
+            <p class="bexcerpt">Stop wasting budget on broad audiences. Here is our blueprint for local targeting that actually drives phone calls.</p>
+            <div class="bmeta">
+              <div class="bmeta-author">
+                <div class="bmeta-avatar">G</div> Grothentic
+              </div>
+              <span>Apr 28, 2026</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="bcard reveal d2">
+          <div class="bcard-img">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Healthcare Clinic Marketing">
+            <span class="bcat">Case Study</span>
+          </div>
+          <div class="bcard-body">
+            <div class="btitle">Tripling Organic Traffic for a Sarasota Healthcare Clinic</div>
+            <p class="bexcerpt">How a deep technical audit and a restructured content silo took this clinic from page 3 to dominating the map pack.</p>
+            <div class="bmeta">
+              <div class="bmeta-author">
+                <div class="bmeta-avatar">G</div> Grothentic
+              </div>
+              <span>Apr 12, 2026</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="pagination reveal">
+        <a href="#" class="page-btn active">1</a>
+        <a href="#" class="page-btn">2</a>
+        <a href="#" class="page-btn">3</a>
+        <a href="#" class="page-btn">→</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="newsletter-cta">
+    <div class="hero-noise"></div>
+    <div class="container">
+      <div class="nl-wrap reveal">
+        <div class="tag center">Stay Ahead</div>
+        <h2 class="nl-h">Get Local SEO & Marketing Insights Straight to Your Inbox</h2>
+        <p class="nl-sub">Join hundreds of Southwest Florida business owners receiving our weekly breakdown of what's working in local SEO and paid ads. No fluff — just tactics that drive revenue.</p>
+        <form class="nl-form" action="#" method="POST">
+          <input type="email" class="nl-input" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <a href="/" class="foot-logo">
+            <svg width="28" height="28" viewBox="0 0 1080 1080" fill="none">
+              <path d="M540.019 287.167C395.592 287.167 278.083 404.638 278.083 549.065C278.083 614.587 302.248 674.529 342.135 720.523L425.111 637.546C406.186 613.041 394.952 582.354 394.952 549.065C394.952 469.104 460.021 404.035 540.019 404.035C620.018 404.035 685.05 469.104 685.05 549.065C685.05 582.316 673.777 613.004 654.89 637.508L737.904 720.523C777.753 674.529 801.918 614.587 801.918 549.065C801.918 404.638 684.409 287.167 540.019 287.167Z" fill="currentColor" />
+              <path d="M737.905 720.521C710.875 751.623 676.681 776.354 637.889 791.999L540.021 694.131L442.115 791.999C403.322 776.316 369.129 751.623 342.136 720.521L425.112 637.544L540.021 522.636L737.905 720.521Z" fill="#fff" />
+            </svg>
+            Grothentic
+          </a>
+          <p class="foot-desc">Sarasota SEO agency and digital marketing company serving local businesses across Southwest Florida.</p>
+          <div class="foot-contact"><a href="tel:9412171110">(941) 217-1110</a><a href="mailto:info@grothentic.io">info@grothentic.io</a></div>
+        </div>
+        <div><span class="foot-col-h">Services</span>
+          <ul class="foot-links">
+            <li><a href="/seo-services/">SEO Services</a></li>
+            <li><a href="/web-design-services/">Web Design</a></li>
+            <li><a href="/digital-marketing/">Paid Ads</a></li>
+          </ul>
+        </div>
+        <div><span class="foot-col-h">Company</span>
+          <ul class="foot-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div><span class="foot-col-h">Locations</span><ul class="foot-links"><li><a href="/seo-north-port/">North Port SEO</a></li><li><a href="/seo-sarasota/">Sarasota SEO</a></li><li><a href="/seo-bradenton/">Bradenton SEO</a></li><li><a href="/seo-venice/">Venice SEO</a></li><li><a href="/seo-lakewood-ranch/">Lakewood Ranch SEO</a></li><li><a href="/seo-port-charlotte/">Port Charlotte SEO</a></li></ul></div>
+      </div>
+      <div class="foot-bottom">
+        <span class="foot-copy">© 2026 Grothentic.io · All Rights Reserved</span>
+        <div class="foot-legal"><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic Hover Effect for Cards
+    document.querySelectorAll('.bcard').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      });
+    });
+    // Scroll Nav Logic
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled-light', window.scrollY > 50);
+    });
+    // Intersection Observer for Animations
+    const els = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(e => e.forEach(x => {
+      if (x.isIntersecting) x.target.classList.add('in');
+    }), {
+      threshold: 0.15
+    });
+    els.forEach(el => io.observe(el));
+  </script>
+</body>
+
+</html>
